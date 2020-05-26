@@ -1,0 +1,127 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;margin:0;padding:0}
+body{font:14px Arial, Helvetica, sans-serif;color:#333;background:url(../i/bg.gif) repeat-x;margin:0}
+p{font:14px Arial, Helvetica, sans-serif;color:#333;text-align:justify;line-height:24px;margin:15px 0}
+h1,h2,h3,h4,h5,h6{font-family:"Times New Roman", Times, serif;font-weight:400}
+h1{color:#023e7f;font-size:27px;margin-bottom:15px}
+h2{color:#0545ae;font-size:18px;margin:15px 0}
+h3{color:#063b9c;font-size:24px}
+h4{color:#108407;font-size:12px}
+h5{color:#505f4f;font-size:12px}
+h6{color:#588505;font-size:11px}
+a{text-decoration:none;color:#0b6c9a}
+a:hover{color:#f86300}
+.left{float:left}
+.right{float:right}
+.table td{border:1px solid #ddd;font-size:16px;font-style:italic}
+.bg-1{background-color:#dbdcf3}
+#container{width:950px;margin:0 auto}
+#top-header{float:left;width:950px;height:78px}
+#top-header .logo a{float:left;background:url(../i/supracyn-logo.jpg) no-repeat;width:396px;height:78px;display:block}
+#top-header .phone{float:right;background:url(../i/contact-supracyn-pharma.jpg) no-repeat;display:block;width:260px;height:32px;margin-top:23px}
+#navigation{float:left;width:950px;height:36px;padding-top:6px}
+#navigation .nav{float:left;width:700px}
+#navigation .nav ul{margin:0;padding:0}
+#navigation .nav ul li{float:left;list-style:none}
+#navigation .nav ul li a{float:left;font:16px "Times New Roman", Times, serif;color:#fff;text-decoration:none;padding:4px 25px}
+#navigation .nav ul li a:hover{color:#0a63dd;background-color:#fff;border-radius:8px;-moz-border-radius:8px;-webkit-border-radius:8px}
+#banner{float:left;width:950px;min-height:200px;background-color:#FFF}
+#banner .slide-show{flot:left;width:932px;min-height:200px;padding:9px 9px 0}
+#banner .banner-bottom{float:left;background:url(../i/border-banner.jpg) no-repeat;width:950px;height:19px}
+#body{float:left;width:932px;min-height:200px;padding:9px}
+#body .welcome-block{float:left;width:932px;margin-top:20px}
+#body .welcome-block p{margin-bottom:15px}
+#body .welcome-block h1{font:normal 23px "Times New Roman", Times, serif;color:#0563b7;margin-bottom:15px}
+#body .products-block{float:left;width:932px}
+#body .hide{
+    display: none !important;
+}
+#body .product-items{float:left;background:url(../i/product-bg.jpg) no-repeat;width:892px;height:72px;padding:20px}
+#body .product-items img{float:left;margin-right:46px}
+.list-style-1 ul{margin-left:15px;padding:0}
+.list-style-1 ul li{list-style:none;font:14px Arial, Helvetica, sans-serif;text-align:left;line-height:22px;background:url(../i/bullet-1.png) 0 3px no-repeat;color:#010101;padding-left:22px}
+#body .contact-us{float:left;width:700px;margin-bottom:20px}
+#body .contact-us h2{margin:10px 0}
+#body .contact-left-block{float:left;width:400px;margin-right:20px;border-bottom:1px dashed #cecccc}
+#body .contact-google-map{float:left;width:400px;border-right:1px dashed #cecccc;border-bottom:1px dashed #cecccc}
+#body .contact-heading{float:left;background-color:#1e71bd;font:bold 15px tahoma,verdana,arial,sans-serif;color:#FFF;width:380px;margin-bottom:10px;padding:4px 4px 4px 10px}
+#body .contact-heading1{font:bold 15px tahoma,verdana,arial,sans-serif;color:#9c063b; margin-bottom:10px;padding:4px 4px 4px 10px}
+#body .mobile-icon{float:left;background:url(../i/icon-mobile.png) no-repeat;height:22px;font:12px tahoma,verdana,arial,sans-serif;line-height:22px;color:#1b1d1d;padding-left:32px;padding-bottom:5px;width:380px;border-bottom:1px dashed #cecccc;margin-bottom:8px;margin-left:5px}
+#body .address-text{float:left;width:360px;padding-left:32px}
+#body .address-text p{text-align:left;line-height:22px;margin:5px 0}
+#body .address-icon{float:left;background:url(../i/icon-address.png) no-repeat;height:22px;line-height:22px;padding-left:32px;border-bottom:1px dashed #cecccc;width:360px;margin-bottom:5px;margin-left:5px}
+#body .phone-icon{float:left;background:url(../i/icon-telephone.png) no-repeat;min-height:22px;line-height:22px;padding-left:32px;border-bottom:1px dashed #cecccc;width:360px;margin-bottom:5px;margin-left:5px}
+#body .fax-icon{float:left;background:url(../i/icon-fax.png) no-repeat;height:22px;line-height:22px;padding-left:32px;border-bottom:1px dashed #cecccc;width:360px;margin-bottom:5px;margin-left:5px}
+#body .cell-icon{float:left;background:url(../i/icon-mobile.png) no-repeat;height:22px;line-height:22px;padding-left:32px;width:360px;border-bottom:1px dashed #cecccc;margin-bottom:5px;margin-left:5px}
+#body .email-icon{float:left;background:url(../i/icon-mail.png) no-repeat;min-height:22px;line-height:22px;padding-left:32px;width:360px;margin-bottom:5px;margin-left:5px}
+#form{float:left;margin-top:20px}
+#form fieldset{border:1px dashed #cecccc;width:660px;padding:5px 20px}
+#form legend{color:#fff;background:#1e71bd;border:1px dashed #cecccc;font:bold 16px tahoma,verdana,arial,sans-serif;padding:2px 15px}
+#form label{float:left;display:block;line-height:18px;font:bold 11px tahoma,verdana,arial,sans-serif}
+#form input,textarea{color:#333;background:#fff;border:1px solid #c1bfbf}
+#form .submit input{font:bold 13px tahoma,verdana,arial,sans-serif;color:#fff;background:#191c53;border:2px outset #1e2166;-moz-border-radius:8px;-webkit-border-radius:8px;-khtml-border-radius:8px;border-radius:8px;cursor:pointer;margin-left:225px;margin-top:10px;padding:4px 8px}
+#form .submit input:hover{background:#e5b126;border:2px outset #b38713}
+#form p{margin:5px 0 10px}
+#footer{float:left;background-color:#1e71bd;height:18px;width:940px;font:11px Arial, Helvetica, sans-serif;color:#fff;padding:8px 5px}
+.theme-default .nivoSlider{position:relative;background:#fff url(../i/loading.html) no-repeat 50% 50%}
+.theme-default .nivoSlider img{position:absolute;top:0;left:0;display:none}
+.theme-default .nivo-controlNav{position:absolute;left:50%;bottom:-63px;margin-left:0}
+.theme-default .nivo-controlNav a{display:block;width:22px;height:22px;background:url(../i/bullets.png) no-repeat;text-indent:-9999px;border:0;margin-right:2px;margin-top:50px;margin-bottom:20px;float:left}
+.theme-default .nivo-controlNav a.active{background-position:0 -22px}
+.theme-default .nivo-directionNav a{display:block;width:30px;height:30px;background:url(../i/arrows.png) no-repeat;text-indent:-9999px;border:0}
+.theme-default a.nivo-nextNav{background-position:-30px 0;right:15px}
+.theme-default a.nivo-prevNav{left:15px}
+#dev7link{position:absolute;top:0;left:50px;background:url(images/dev7logo.html) no-repeat;width:60px;height:67px;border:0;display:block;text-indent:-9999px}
+.theme-default #slider{width:932px;height:309px;margin:0 auto}
+.theme-pascal.slider-wrapper,.theme-orman.slider-wrapper{margin-top:150px}
+.clear{clear:both}
+.theme-orman.slider-wrapper{background:url(slider.html) no-repeat;width:932px;height:309px;padding-top:18px;position:relative;margin:0 auto}
+.theme-orman .nivoSlider{position:relative;width:932px;height:309px;margin-left:77px;background:url(loading.html) no-repeat 50% 50%}
+.theme-orman .nivoSlider img{position:absolute;top:0;left:0;display:none;width:932px;height:309px}
+.theme-orman .nivo-controlNav{position:absolute;left:50%;bottom:-63px;margin-left:311px}
+.theme-orman .nivo-controlNav a{display:block;width:10px;height:10px;background:url(bullets.html) no-repeat;text-indent:-9999px;border:0;margin-right:7px;float:left}
+.theme-orman .nivo-controlNav a.active{background-position:0 -10px}
+.theme-orman .nivo-directionNav a{display:block;width:25px;height:200px;background:url(../i/arrows.png) no-repeat 0 50%;text-indent:-9999px;border:0;top:20px}
+.theme-orman a.nivo-nextNav{background-position:100% 50%;right:-40px;padding-right:20px}
+.theme-orman a.nivo-prevNav{left:-40px;padding-left:20px}
+.theme-orman .ribbon{background:url(ribbon.html) no-repeat;width:111px;height:111px;position:absolute;top:-3px;left:56px;z-index:300}
+.nivoSlider{position:relative}
+.nivoSlider img{position:absolute;top:0;left:0}
+
+.nivoSlider a.nivo-imageLink{position:absolute;top:0;left:0;width:100%;height:100%;border:0;z-index:6;display:none;margin:0;padding:0}
+.nivo-slice{display:block;position:absolute;z-index:5;height:100%}
+.nivo-box{display:block;position:absolute;z-index:5}
+.nivo-caption{position:absolute;left:0;bottom:0;background:#000;color:#fff;opacity:0.8;width:100%;z-index:8}
+.nivo-caption p{margin:0;padding:5px}
+.nivo-caption a{display:inline!important}
+.nivo-html-caption{display:none}
+.nivo-directionNav a{position:absolute;top:45%;z-index:9;cursor:pointer}
+.nivo-prevNav{left:0}
+.nivo-nextNav{right:0}
+.nivo-controlNav a{position:relative;z-index:9;cursor:pointer}
+.nivo-controlNav a.active{font-weight:700}
+#form input:focus,#form textarea:focus{background:#f3f8e5;border:1px solid #bbdc4f;outline:1px solid #dbf77f}
+#footer a,.theme-default .nivo-caption a:hover,.theme-orman .nivo-caption a:hover{color:#fff}
+.theme-default .nivoSlider a,.theme-orman .nivoSlider a{border:0;display:block}
+.theme-default .nivo-caption,.theme-orman .nivo-caption{font-family:Helvetica, Arial, sans-serif}
+.theme-default .nivo-caption a,.theme-orman .nivo-caption a{color:#fff;border-bottom:1px dotted #fff}
+
+.stepcarousel{
+position: relative; /*leave this value alone*/
+overflow: scroll; /*leave this value alone*/
+width: 892px; /*Width of Carousel Viewer itself*/
+height: 72px; /*Height should enough to fit largest content's height*/
+}
+
+.stepcarousel .belt{
+position: absolute; /*leave this value alone*/
+left: 0;
+top: 0;
+}
+
+.stepcarousel .panel{
+float: left; /*leave this value alone*/
+overflow: hidden; /*clip content that go outside dimensions of holding panel DIV*/
+margin:0px; /*margin around each panel*/
+margin-right:10px;
+width: 160px; /*Width of each panel holding each content. If removed, widths should be individually defined on each content DIV then. */
+}
