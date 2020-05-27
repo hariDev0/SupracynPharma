@@ -1,0 +1,20 @@
+{
+	"cardiology": [{
+		"name": "qwer",
+		"price": 79,
+		"composition": "rtyui"
+	}, {
+		"name": "qwerty",
+		"price": 78,
+		"composition": "rtyui"
+	}],
+	"diabetes": [{
+		"name": "qwer",
+		"price": 79,
+		"composition": "rtyui"
+	}, {
+		"name": "qwerty",
+		"price": 78,
+		"composition": "rtyui"
+	}]
+}
