@@ -2,265 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
    <!-- Mirrored from supracynpharma.com/distributors .html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 May 2020 15:31:23 GMT -->
    <head>
-      <title>Distributors - Supracyn Pharma Distributor</title>
+      <title>Supracyn Pharma</title>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <link href="o/stylesheet.css" rel="stylesheet" type="text/css" />
       <link href="css/products.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
       <!-- <link rel="css/Products" type="text/css" href="styles.less" /> -->
       <script src="js/ProductsCart.js"></script>
-
-
-
-      <script>
-         $(document).ready(function() {
-     
-           // Variables
-           var $carousel = $('#carousel'),
-             $images = $('.images'),
-             intervalSpeed = 3000,
-             imgWidth = $images.find('img:first').width(),
-             slidesCount = $images.find('img').length;
-           currentSlide = 0,
-             innerWidth = slidesCount * imgWidth;
-     
-           // Calculate images width
-           $images.find('.inner').width(innerWidth);
-     
-           // Function to slide to certain slide
-           var slideTo = function(slideNo) {
-             // Calculate pixels
-             var px = slideNo * imgWidth;
-             $images.find('.inner').css({
-               '-webkit-transform': 'translateX(-' + px + 'px)',
-               '-moz-transform': 'translateX(-' + px + 'px)',
-               'transform': 'translateX(-' + px + 'px)'
-             });
-     
-             // Change View link url
-             $('.btn.btn-goto').attr('href', $('.img-wrapper').eq(slideNo).data('href'));
-           };
-     
-           // Function to go to next slide
-           var slide = function(to) {
-             currentSlide += to;
-     
-             // Can't go further
-             if (currentSlide >= slidesCount) {
-               currentSlide = 0;
-             }
-     
-             if (currentSlide < 0) {
-               currentSlide = slidesCount - 1;
-             }
-     
-             slideTo(currentSlide);
-           };
-     
-           // Prev / next
-           $('ul.pagination .prev, ul.pagination .next').on('click touchstart', function() {
-             var whereTo = $(this).hasClass('prev') ? -1 : 1;
-             slide(whereTo);
-           });
-     
-           // Slide automatically
-           var automaticInterval;
-           var setAutomaticInterval = function() {
-             automaticInterval = setInterval(function() {
-               slide(1);
-             }, intervalSpeed);
-           };
-     
-           // Start sliding
-           setAutomaticInterval();
-     
-           // On hover, stop automatic sliding
-           $('.images .inner, ul.pagination li').on('mouseover mouseout touchstart touchend', function(e) {
-             if (e.type != 'touchstart') {
-               e.preventDefault();
-             }
-     
-             if (e.type == 'mouseover' || e.type == 'touchstart') {
-               clearInterval(automaticInterval);
-             } else {
-               setAutomaticInterval();
-             }
-           });
-     
-           // First slide link on load
-           $('.btn.btn-goto').attr('href', $('.img-wrapper').eq(0).data('href'));
-         });
-       </script>
-       <style>
-         html,
-         body {
-           overflow: hidden;
-           width: 100%;
-           height: 100%;
-             }
-         
-         body {
-           margin: 0;
-           padding: 0;
-           font-family: "Helvetica Neue Light", Helvetica, sans-serif;
-         }
-         
-         #carousel {
-           background-image: url(http://media.wixapps.net/ggl-105032702176748965476/images/4630d98ddd0247db98b92fce2ad265b4/v1/fit/w_1237,h_456,q_75/file.png);
-           background-repeat: no-repeat;
-           width: 320px;
-           height: 320px;
-           position: relative
-         }
-         
-         #carousel .inner {
-           transition: all 1s ease-in-out;
-           -webkit-transition: all 1s ease-in-out;
-           -moz-transition: all 1s ease-in-out;
-           -ms-transition: all 1s ease-in-out;
-           -o-transition: all 1s ease-in-out;
-           position: absolute;
-           height: 100%
-         }
-         
-         #carousel .inner img,
-         #carousel .inner .img-wrapper {
-           position: relative;
-           float: left;
-           width: 251px
-         }
-         
-         #carousel .images {
-           position: absolute;
-           top: 16px;
-           left: 14px;
-           width: 251px;
-           height: 140px;
-           overflow: hidden;
-           display: inline-block
-         }
-         
-         #carousel ul.pagination {
-           position: absolute;
-           bottom: 25px;
-           list-style: none;
-           font-size: 20px;
-           margin-left: auto;
-           margin-right: auto;
-           left: 0;
-           right: 0;
-           text-align: center;
-           margin-left: -76px
-         }
-         
-         #carousel ul.pagination .buttons {
-           transition: opacity .4s ease-in-out;
-           -webkit-transition: opacity .4s ease-in-out;
-           -moz-transition: opacity .4s ease-in-out;
-           -ms-transition: opacity .4s ease-in-out;
-           -o-transition: opacity .4s ease-in-out;
-           zoom: 1;
-           filter: alpha(opacity=(80));
-           -webkit-opacity: .8;
-           -moz-opacity: .8;
-           -khtml-opacity: .8;
-           opacity: .8;
-           display: inline-block;
-           height: 100%
-         }
-         
-         #carousel ul.pagination .buttons:hover,
-         #carousel ul.pagination .buttons:focus {
-           zoom: 1;
-           filter: alpha(opacity=(100));
-           -webkit-opacity: 1;
-           -moz-opacity: 1;
-           -khtml-opacity: 1;
-           opacity: 1
-         }
-         
-         #carousel ul.pagination .buttons .btns-inner {
-           display: table;
-           margin: 0 auto;
-           height: 100%;
-           color: #fff
-         }
-         
-         #carousel ul.pagination .buttons .btns-inner h2 {
-           margin-top: 0;
-           margin-bottom: 50px;
-           font-weight: 400;
-           font-size: 25px
-         }
-         
-         #carousel ul.pagination .buttons .btns-inner div {
-           display: table-cell;
-           vertical-align: middle
-         }
-         
-         #carousel ul.pagination .buttons .btns-inner div .btn {
-           transition: all .4s ease-in-out;
-           -webkit-transition: all .4s ease-in-out;
-           -moz-transition: all .4s ease-in-out;
-           -ms-transition: all .4s ease-in-out;
-           -o-transition: all .4s ease-in-out;
-           color: #21303b;
-           display: inline-block;
-           border-radius: 20px;
-           border: 1px solid #21303b;
-           padding: 7px 23px;
-           text-decoration: none;
-           margin: 0 6px;
-           font-size: 18px
-         }
-         
-         #carousel ul.pagination li {
-           zoom: 1;
-           filter: alpha(opacity=(80));
-           -webkit-opacity: .8;
-           -moz-opacity: .8;
-           -khtml-opacity: .8;
-           opacity: .8;
-           transition: all .4s ease-in-out;
-           -webkit-transition: all .4s ease-in-out;
-           -moz-transition: all .4s ease-in-out;
-           -ms-transition: all .4s ease-in-out;
-           -o-transition: all .4s ease-in-out;
-           display: inline-block;
-           cursor: pointer;
-           width: 35px;
-           height: 35px;
-           border-radius: 50%;
-           border: 1px solid #21303b
-         }
-         
-         #carousel ul.pagination li:hover {
-           zoom: 1;
-           filter: alpha(opacity=(100));
-           -webkit-opacity: 1;
-           -moz-opacity: 1;
-           -khtml-opacity: 1;
-           opacity: 1
-         }
-         
-         #carousel ul.pagination li div {
-           width: 10px;
-           height: 17px;
-           background: url(http://media.wixapps.net/ggl-105032702176748965476/images/9d0280273cd149c780a24b9645014f2a/v1/fit/w_933,h_456,q_75/file.png);
-           background-repeat: no-repeat;
-           margin: 8px 0 0 12px
-         }
-         
-         #carousel ul.pagination li.next div {
-           background: url(http://media.wixapps.net/ggl-105032702176748965476/images/9d0280273cd149c780a24b9645014f2a/v1/fit/w_933,h_456,q_75/file.png) -10px 0;
-           background-repeat: no-repeat;
-           margin: 8px 0 0 14px
-         }
-       </style>
-
-       
    </head>
-   <body>
-      <div id="container">
+   <body >
+      <div id="container" >
          <div id="top-header">
             <div class="logo"><a href="index.html"></a></div>
             <div class="phone"></div>
@@ -282,183 +33,169 @@
             <div class="slide-show">
                <div id="wrapper">
                   <div class="slider-wrapper theme-default">
-
-
                      <div class="shopping-cart">
-
-                        <div class="column-labels">
-                          <label class="product-image">Product</label>
-                          <label class="product-details">lable</label>
-                          <label class="product-price">Price</label>
-                          <!-- <label class="product-quantity">Quantity</label> -->
-                          <label class="product-add">Add To Cart</label>
-                          <!-- <label class="product-line-price">Total</label> --> 
-                        </div>
-                      
+                        <!-- <div class="column-labels">
+                           <label class="product-image">Product</label>
+                           <label class="product-details">lable</label>
+                           <label class="product-price">Price</label>
+                           <!-- <label class="product-quantity">Quantity</label> 
+                           <label class="product-add">Add To Cart</label>
+                           <!-- <label class="product-line-price">Total</label> --> 
+                        <!-- </div> -->
                         <div class="product">
-                          <div class="product-image">
-
-
-
-
-
-                           <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                            <img src="https://5.imimg.com/data5/BU/UN/HT/SELLER-3269768/sucralfate-1000-mg-oxetacaine-20-mg-suspension-500x500.jpg">
-                          </div>
-                          <div class="product-details">
-                            <div class="product-title">	
-                              Telmisartan 80mg and Clinidipine 10mg Tablets, Packaging Type: Strips</div>
-                            <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p>
-                          </div>
-                          <div class="product-price-dig">12.99</div>
-                          <!-- <div class="product-quantity">
-                            <input type="number" value="2" min="1">
-                          </div>-->
-                          <div class="product-removal">
-                            <button class="add-product">
-                              Add to Cart
-                            </button>
-                          </div>
-                          <!-- <div class="product-line-price">25.98</div> --> 
+                           <div class="product-image">
+                              <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                              <img src="medicines/ezgif.com-gif-maker.gif">
+                           </div>
+                           <div class="product-details">
+                              <div class="product-title">
+                                 <div class="productSuffcx row">
+                                    <div class="col-md-2">
+                                       <div class="sufficx" >Rx</div>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="sufficxText">Prescription Requested</div>
+                                    </div>
+                                 </div>
+                                 <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div>
+                                 <div class="productmanfacturedesc">Mfg.Mhs Pharmaceuticals</div>
+                                 <div class="composition topmargin">Composition</div>
+                                 <div class="productmanfacture">Amoxlin</div>
+                                 <div class="composition topmargin">class</div>
+                                 <div class="productmanfacture">class Desc</div>
+                              </div>
+                              <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                           </div>
+                           <!-- <div class="product-price-dig"> 12.99</div> -->
+                           <div class="product-price-details">
+                              <div class="product-title-price-quality">
+                                
+                              <div class="product-price-pack-quality">
+                                6 Units/pack
+                             </div>
+                                 <div class="product-price-title row">
+                                    <!-- <div class="col-sm-6">
+                                       <div class="product-price-pack-quality">
+                                          6 Units/pack
+                                       </div>
+                                    </div> -->
+                                    <div class="col-md-2">
+                                       <div class="product-price-dallar">
+                                          MRP
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="product-price-dallar">
+                                          ₹
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="product-price-dig">
+                                          12.99
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="producttaxes">inclusive all taxes</div>
+                                 <div class="product-add product-detail-info">
+                                    <button class="add-product">
+                                    Add to Cart
+                                    </button>
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                              </div>
+                              <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                           </div>
+                           <!-- <div class="product-quantity">
+                              <input type="number" value="2" min="1">
+                              </div>-->
+                           <!-- <div class="product-line-price">25.98</div> --> 
                         </div>
-                      
                         <div class="product">
-                          <div class="product-image">
-                            <img src="https://5.imimg.com/data5/FV/ZA/ER/SELLER-24468581/etrident-90-tablets-500x500.jpg">
-                          </div>
-                          <div class="product-details">
-                            <div class="product-title">Etrident - 90 Tablets</div>
-                            <p class="product-description">Etoricoxib</p>
-                          </div>
-                          <div class="product-price-dig">45.99</div>
-                          <!-- <div class="product-quantity">
-                            <input type="number" value="1" min="1">
-                          </div>-->
-                          <div class="product-removal">
-                            <button class="add-product">
-                              Add to Cart
-                            </button>
-                          </div>
-                          <!-- <div class="product-line-price">45.99</div>  -->
+                           <div class="product-image">
+                              <img src="medicines/ezgif.com-gif-maker.gif">
+                           </div>
+                           <div class="product-details">
+                              <div class="productSuffcx row">
+                                 <div class="col-md-2">
+                                    <div class="sufficx" >Rx</div>
+                                 </div>
+                                 <div class="col-md-10">
+                                    <div class="sufficxText">Prescription Requested</div>
+                                 </div>
+                              </div>
+                              <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div>
+                              <div class="productmanfacturedesc">Mfg.Mhs Pharmaceuticals</div>
+                              <div class="composition topmargin">Composition</div>
+                              <div class="productmanfacture">Amoxlin</div>
+                              <div class="composition topmargin">class</div>
+                              <div class="productmanfacture">class Desc</div>
+                           </div>
+                           <div class="product-price-details">
+                            <div class="product-title-price-quality">
+
+                              <div class="product-price-pack-quality">
+                                6 Units/pack
+                             </div>
+                               <div class="product-price-title row">
+                                  <!-- <div class="col-sm-6">
+                                     
+                                  </div> -->
+                                  <div class="col-md-2">
+                                     <div class="product-price-dallar">
+                                        MRP
+                                     </div>
+                                  </div>
+                                  <div class="col-md-2">
+                                     <div class="product-price-dallar">
+                                        ₹
+                                     </div>
+                                  </div>
+                                  <div class="col-md-2">
+                                     <div class="product-price-dig">
+                                        12.99
+                                     </div>
+                                  </div>
+                               </div>
+                               <!-- <div class="product-price-dig"> 12.99</div> -->
+                               <div class="producttaxes">inclusive all taxes</div>
+                               <div class="product-add product-detail-info">
+                                  <button class="add-product">
+                                  Add to Cart
+                                  </button>
+                               </div>
+                               <!-- <div class="product-price-dig"> 12.99</div> -->
+                            </div>
+                            <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                         </div>
+                           <!-- <div class="product-line-price">45.99</div>  -->
                         </div>
-                      
                         <div class="hide totals">
-                          <div class="totals-item">
-                            <label>Subtotal</label>
-                            <div class="totals-value" id="cart-subtotal">71.97</div>
-                          </div>
-                          <div class="totals-item">
-                            <label>Tax (5%)</label>
-                            <div class="totals-value" id="cart-tax">3.60</div>
-                          </div>
-                          <div class="totals-item">
-                            <label>Shipping</label>
-                            <div class="totals-value" id="cart-shipping">15.00</div>
-                          </div>
-                          <div class="totals-item totals-item-total">
-                            <label>Grand Total</label>
-                            <div class="totals-value" id="cart-total">90.57</div>
-                          </div>
+                           <div class="totals-item">
+                              <label>Subtotal</label>
+                              <div class="totals-value" id="cart-subtotal">71.97</div>
+                           </div>
+                           <div class="totals-item">
+                              <label>Tax (5%)</label>
+                              <div class="totals-value" id="cart-tax">3.60</div>
+                           </div>
+                           <div class="totals-item">
+                              <label>Shipping</label>
+                              <div class="totals-value" id="cart-shipping">15.00</div>
+                           </div>
+                           <div class="totals-item totals-item-total">
+                              <label>Grand Total</label>
+                              <div class="totals-value" id="cart-total">90.57</div>
+                           </div>
                         </div>
-                            
-                            <button class="hide checkout">Checkout</button>
-                      
-                      </div>
-
-                     <!-- <img src="i/cardioproduct1.jpg">
-                     <img src="i/cardioproduct2.jpg"> -->
-                     <!-- <div>
-                        <img src="i/banner.jpg" usemap="#green" border="0">
-                        <map name="green">
-                        <area shape="rect" coords="5,70,400,120" href="products/cardiology.html" title="cardiology">
-                        <area shape="rect" coords="5,140,400,190" href="http://www.trees.com/save.html" title="diabetes">
-                        <area shape="rect" coords="5,190,400,250" href="http://www.trees.com/save.html" title="antibiotics">
-                        <area shape="rect" coords="300,250,600,290" href="http://www.trees.com/save.html" title="gastroenterology">
-                        <area shape="rect" coords="600,70,920,120" href="http://www.trees.com/save.html" title="cholesterol">
-                        <area shape="rect" coords="600,140,920,190" href="http://www.trees.com/save.html" title="pain management">
-                        <area shape="rect" coords="600,190,920,250" href="http://www.trees.com/save.html" title="nutraceuticals">
-                         <area shape="rect" coords="200,230,600,270" href="http://www.trees.com/save.html" title="StumbleUpon4">
-                        </map>
-                     </div> -->
-                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" />  -->
-                        <!-- <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                        <button class="hide checkout">Checkout</button>
+                     </div>
                   </div>
                </div>
+               <div class="banner-bottom"></div>
             </div>
-            <div class="banner-bottom"></div>
          </div>
-         <!-- <div id="body">
-            <div class="hide welcome-block">
-               <h1>Distributors</h1>
-               <div class="list-style-1">
-                  <p><img src="i/supracyn-2.jpg" alt="supracyn" width="270" height="207" align="right" style="margin-left:15px;" /></p>
-                  <h2>List of Institutions With Exclusive Rate Contract </h2>
-                  <ul>
-                     <li>Bharat Dynamic Limited  (Kanchanbagh)</li>
-                     <li>Bharat Dynamic Limited (Bhanur)</li>
-                     <li>National Academy  Agriculture Research Centre (Naarm)</li>
-                     <li>National Institute Of Rural  Development (Nird)</li>
-                     <li>Ordnance Factory Hospital, Medak,  Yeddumailaram</li>
-                     <li>Reserve Bank Of India, Hyderabad.</li>
-                  </ul>
-                  <h2>Other Institutions Catered</h2>
-                  <ul>
-                     <li>Air India Limited</li>
-                     <li>Bhel R&amp;D</li>
-                     <li>Bharat Heavy Electrical's Ltd  (Bhel)</li>
-                     <li>Employees State Insurance  Corporation (Esic)</li>
-                     <li>Freedom Foundation</li>
-                     <li>Gandhi Hospital  Aarogyasri</li>
-                     <li>Institute Of Mental Health Care  (Imh)</li>
-                     <li>Military Hospital</li>
-                     <li>Osmania General Hospital</li>
-                     <li>Osmania Aarogyasri</li>
-                     <li>Share India Trust</li>
-                     <li>Singareni Collieries Company Ltd  (Hyderabad &amp; Kothagudem)</li>
-                     <li>State Bank Of India (Sbi) Koti &amp; Secunderabad</li>
-                  </ul>
-                  <h2>We are  Distributors for various companies as stated below</h2>
-                  <ul>
-                     <li>Abbott Healthcare, (Formerly  Piramal Healthcare) </li>
-                     <li>Alkem Laboratories Ltd (Hiv)</li>
-                     <li>Bayer Zydus Ltd.</li>
-                     <li>Biocon Ltd</li>
-                     <li>Cipla Ltd</li>
-                     <li>Corazon Pharma Pvt. Ltd</li>
-                     <li>Emcure Pharmaceutical Ltd (Hiv)</li>
-                     <li>Giocon Pharma Limited.</li>
-                     <li>Hab Pharmaceuticals Ltd</li>
-                     <li>Jenburkt Pharmaceuticals Limited</li>
-                     <li>Mankind Pharmaceuticals </li>
-                     <li>Novonordisk</li>
-                     <li>Oxygen Pharmachem Pvt. Ltd.</li>
-                     <li>Pfizer Ltd</li>
-                     <li>Samarth Lifescience</li>
-                     <li>Steadfast Medishield Pvt Ltd.</li>
-                     <li>Serdia Pharmaceuticals (I) Pvt  Ltd</li>
-                     <li>Troikaa Pharmaceuticals Ltd</li>
-                     <li>Ucb India Pvt Ltd.</li>
-                     <li>Unichem Laboratories Ltd</li>
-                     <li>Vestas Life Science</li>
-                  </ul>
-                  <h2>List of  Key Accounts</h2>
-                  <ol style="margin-left:50px;">
-                     <li><b> Chain  Stores</b> - Med Plus, Sai Aashirwad (Hetro Pharmacy) Keimed (Apollo).</li>
-                     <li><b> Corporate Hosp</b>. - Medwin, Bishak Pharma (Kamineni Hosp.) Care (Banjara,  Nampally and Musheerabad),
-                        Yashoda  (Somajiguda,Secunderabad,Cancer Institute),
-                        Unimed Hospital, BBR,  Aware Global Hospital,
-                        KIMS, Aditya etc.
-                     </li>
-                     <li><b> Government Hospitals</b> - Osmania General Hospital, Osmania  Aarogyasri,
-                        Gandhi Hospital, Gandhi  Aarogyasri, ESIC, Institute of Mental Healthcare (IMH).
-                     </li>
-                     <li><b> CGHS  Chemist</b> - There are around 7 parties to supply 13 Dispensaries.</li>
-                  </ol>
-                  <p> Apart  from the above, there are important attached counters, Doctors and attach  pharmacies are also catered.</p>
-               </div>
-            </div>
-         </div> -->
-         <div id="footer">
+         <div id="footer" style="height: 30px;">
             <div class="left">Copyright &copy; 2014 Supracyn Pharma Distributors All Rights Reserved.</div>
             <!-- <div class="right"><a href="http://dotweavers.com/" target="_blank">Web Design by dotWeavers, Hyderabad</a></div> -->
          </div>
