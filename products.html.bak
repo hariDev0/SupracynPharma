@@ -32,15 +32,14 @@
                      <div>
                         <img src="i/banneredited.gif" usemap="#green" border="0">
                         <map name="green">
-                        <area shape="rect" coords="10,20,300,120" href="cardiology.html" title="cardiology">
-                        <area shape="rect" coords="10,125,300,220" href="diabetes.html" title="diabetes">
-                        <area shape="rect" coords="10,240,300,330" href="antibiotics.html" title="antibiotics">
-                        <area shape="rect" coords="10,345,300,470" href="nephrology.html" title="nephrology">
-                        <area shape="rect" coords="300,345,600,470" href="gastroenterology.html" title="gastroenterology">
-                        <area shape="rect" coords="600,20,930,120" href="neurology.html" title="neurology">
-                        <area shape="rect" coords="600,125,920,220" href="cholesterol.html" title="cholesterol">
-                        <area shape="rect" coords="600,240,920,330" href="painmanagment.html" title="pain management">
-                        <area shape="rect" coords="600,345,920,470" href="nutraceuticals.html" title="nutraceuticals">
+                        <area shape="rect" coords="10,50,300,120" href="cardiology.html" title="cardiology">
+                        <area shape="rect" coords="10,140,300,190" href="diabetes.html" title="diabetes">
+                        <area shape="rect" coords="10,230,300,300" href="antibiotics.html" title="antibiotics">
+                        <area shape="rect" coords="300,150,600,240" href="neurology.html" title="gastroenterology">
+                        <area shape="rect" coords="300,235,600,300" href="gastroenterology.html" title="gastroenterology">
+                        <area shape="rect" coords="600,50,920,120" href="cholesterol.html" title="cholesterol">
+                        <area shape="rect" coords="600,140,920,190" href="painmanagment.html" title="pain management">
+                        <area shape="rect" coords="600,230,920,300" href="nutraceuticals.html" title="nutraceuticals">
                         <!-- <area shape="rect" coords="200,230,600,270" href="http://www.trees.com/save.html" title="StumbleUpon4"> -->
                         </map>
                      </div>
