@@ -30,7 +30,7 @@
                <div id="wrapper">
                   <div class="slider-wrapper theme-default">
                      <div>
-                        <img src="i/banneredited.gif" usemap="#green" border="0">
+                        <img src="i/banneredited.jpg" usemap="#green" border="0">
                         <map name="green">
                         <area shape="rect" coords="5,70,400,120" href="cardiology.html" title="cardiology">
                         <area shape="rect" coords="5,140,400,190" href="diabetes.html" title="diabetes">
