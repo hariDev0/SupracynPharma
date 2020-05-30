@@ -16,7 +16,7 @@ a:hover{color:#f86300}
 .bg-1{background-color:#dbdcf3}
 #container{width:950px;margin:0 auto}
 #top-header{float:left;width:950px;height:78px}
-#top-header .logo a{float:left;background:url(../i/supracyn-logo.jpg) no-repeat;width:396px;height:78px;display:block}
+#top-header .logo a{float:left;background:url(../i/supracyn-logo.jpg) no-repeat;width:300px;height:78px;display:block}
 #top-header .phone{float:right;background:url(../i/contact-supracyn-pharma.jpg) no-repeat;display:block;width:260px;height:32px;margin-top:23px}
 #navigation{float:left;width:950px;height:36px;padding-top:6px}
 #navigation .nav{float:left;width:700px}
@@ -117,6 +117,13 @@ overflow: scroll; /*leave this value alone*/
 width: 892px; /*Width of Carousel Viewer itself*/
 height: 72px; /*Height should enough to fit largest content's height*/
 }
+
+.stepcarousel1{
+    position: relative; /*leave this value alone*/
+    overflow: scroll; /*leave this value alone*/
+    /* width: 892px; /*Width of Carousel Viewer itself */
+    /* height: 72px; Height should enough to fit largest content's height */
+    }
 
 .stepcarousel .belt{
 position: absolute; /*leave this value alone*/
