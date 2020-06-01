@@ -5,12 +5,15 @@
       <title>Supracyn Pharma</title>
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <link href="o/stylesheet.css" rel="stylesheet" type="text/css" />
+      <link href="css/products.css" rel="stylesheet" type="text/css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <!-- <link rel="css/Products" type="text/css" href="styles.less" /> -->
+      <script src="js/ProductsCart.js"></script>
    </head>
-   <body>
-      <div id="container">
+   <body >
+      <div id="container" >
          <div id="top-header">
             <div class="logo"><a href="index.html"></a></div>
-
             <div class="products-block " >
                <!-- <div>Our Certifications  </div> -->
                <div class="product-items">
@@ -19,27 +22,27 @@
                         <div class="panel"  >
                            <img src="i/c1.jpeg" alt="logo" style="height: 70px;" />
                            <!-- <img src="i/c1.jpeg" alt="logo" style="height: 70px;" />
-                           <img src="i/c1.jpeg" alt="logo" style="height: 70px;" />
-                           <img src="i/c1.jpeg" alt="logo" style="height: 70px;" />
-                           <img src="i/c1.jpeg" alt="logo" style="height: 70px;" /> -->
+                              <img src="i/c1.jpeg" alt="logo" style="height: 70px;" />
+                              <img src="i/c1.jpeg" alt="logo" style="height: 70px;" />
+                              <img src="i/c1.jpeg" alt="logo" style="height: 70px;" /> -->
                         </div>
-                       
                         <!-- <div class="panel"><img src="i/logo-2.jpg" alt="logo" /></div> -->
                      </div>
                   </div>
                </div>
             </div>
-
-
             <div class=" hide phone"></div>
          </div>
-         <div><marquee direction="left" bgcolor="white" style="color: #FFA83E;">Welcome to Supracyn Pharma</marquee></div>
+         <div>
+            <marquee direction="left" bgcolor="white" style="color: #FFA83E;">Welcome to Supracyn Pharma</marquee>
+         </div>
          <div id="navigation">
             <div class="nav">
                <ul>
                   <li><a href="index.html">Home</a></li>
                   <li><a href="about-us.html">About&nbsp;Us</a></li>
                   <li><a href="products.html">Products</a></li>
+                  <li><a href="specialities.html">Specialities</a></li>
                   <!-- <li><a href="services.html">Services</a></li> -->
                   <li><a href="contact-us.html">Contact&nbsp;Us</a></li>
                   <!-- <li><a href="http://m15.hs9.in/webmail/" target="_blank">Email&nbsp;Login</a></li> -->
@@ -51,100 +54,1187 @@
             <div class="slide-show">
                <div id="wrapper">
                   <div class="slider-wrapper theme-default">
-                     <div>
-                        <img src="i/banneredited.gif" usemap="#green" border="0">
-                        <map name="green">
-                        <area shape="rect" coords="10,20,300,120" href="cardiology.html" title="cardiology">
-                        <area shape="rect" coords="10,125,300,220" href="diabetes.html" title="diabetes">
-                        <area shape="rect" coords="10,240,300,330" href="antibiotics.html" title="antibiotics">
-                        <area shape="rect" coords="10,345,300,470" href="nephrology.html" title="nephrology">
-                        <area shape="rect" coords="300,345,600,470" href="gastroenterology.html" title="gastroenterology">
-                        <area shape="rect" coords="600,20,930,120" href="neurology.html" title="neurology">
-                        <area shape="rect" coords="600,125,920,220" href="cholesterol.html" title="cholesterol">
-                        <area shape="rect" coords="600,240,920,330" href="painmanagment.html" title="pain management">
-                        <area shape="rect" coords="600,345,920,470" href="nutraceuticals.html" title="nutraceuticals">
-                        <!-- <area shape="rect" coords="200,230,600,270" href="http://www.trees.com/save.html" title="StumbleUpon4"> -->
-                        </map>
+                     <div class="shopping-cart">
+                        <!-- <div class="column-labels">
+                           <label class="product-image">Product</label>
+                           <label class="product-details-special">lable</label>
+                           <label class="product-price">Price</label>
+                           <!-- <label class="product-quantity">Quantity</label> 
+                           <label class="product-add">Add To Cart</label>
+                           <!-- <label class="product-line-price">Total</label> --> 
+                        <!-- </div> -->
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/cardiology/Azycin/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">AZICYN 500MG TAB</div>
+                                       <div class="productmanfacturedesc">3 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Azithromycin 500 MG</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Macrolides</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/cardiology/Metacyn 25/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">METCYN XL 25 TAB</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Metoprolol Succinate ER</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Beta-Blockers</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/cardiology/Metacyn 50/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">METCYN XL 50 TAB</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Metoprolol Succinate ER</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Beta-Blockers</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/cardiology/Supratel 20/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">SUPRATEL 20 TAB</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Telmisartan 20MG</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Angiotensin II Antagonists</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/cardiology/Supratel 40/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">SUPRATEL 40 TAB</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Telmisartan 40MG</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Angiotensin II Antagonists</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/cardiology/Supratel AM/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">SUPRATEL H TAB</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Telmisartan + Hydrochlorothiazide</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Diuretics,  Angiotensin II Antagonists</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/cardiology/Supratel h/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc" style="font-size: 14px;">SUPRATEL AM TAB</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin" style="margin-top: 0px !important;">Composition</div>
+                                       <div class="productmanfacture">Telmisartan + Amlodipine</div>
+                                       <div class="composition topmargin" style="margin-top: 0px !important;">Therapeutic Class</div>
+                                       <div class="productmanfacture">Angiotensin II Antagonists,</div>
+                                       <div class="productmanfacture">Calcium Antagonists,</div>
+                                       <div class="productmanfacture">Anti-Anginal Drugs</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/Diabetics/Glimcyn-M/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">GLIMCYN-M</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Glimepiride 1 MG + Metformin 500 MG</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Antidiabetic Agents</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/Diabetics/glimcynmet 2mg/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">GLIMCYNMET 2MG</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Glimepiride 2 MG+Metformin 500 MG</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Antidiabetic Agents</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/Diabetics/Voglicyn 0.2/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">VOGLICYN .02MG</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Voglibose 0.2 MG</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Antidiabetic Agents</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/Diabetics/voglicyn 0.3/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">VOGLICYN .03MG</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Voglibose 0.3 MG</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Antidiabetic Agents</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/Anti-biotics/Cefixm 200/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">CEFIXM 200MG TAB</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Cefixime 200 MG</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Cephalosporins</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="row">
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/Anti-biotics/Curolite/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">CUROLITE 500MG TAB</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Cefuroxime Axetil</div>
+                                       <div class="composition topmargin">Therapeutic Class</div>
+                                       <div class="productmanfacture">Cephalosporins</div>
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                           <div class="col-md-6">
+                              <div class="product">
+                                 <div class="product-image-special">
+                                    <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                                    <img src="medicines/medicines/Nephro/x-flav/1.gif">
+                                 </div>
+                                 <div class="product-details-special">
+                                    <div class="product-title-special">
+                                       <div class="hide productSuffcx row">
+                                          <div class="col-md-2">
+                                             <div class="sufficx" >Rx</div>
+                                          </div>
+                                          <div class="col-md-10">
+                                             <div class="sufficxText">Prescription Requested</div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                       <div class="productmanfacturedesc">X-FLAV</div>
+                                       <div class="productmanfacturedesc">10 Units/pack</div>
+                                       <div class="composition topmargin">Composition</div>
+                                       <div class="productmanfacture">Flavoxate hydrochloride</div>
+                                       <!-- <div class="composition topmargin">Therapeutic Class</div>
+                                          <div class="productmanfacture">Cephalosporins</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="hide product-price-details">
+                                    <div class="product-title-price-quality">
+                                       <div class="product-price-pack-quality">
+                                          10 Units/pack 
+                                       </div>
+                                       <div class="product-price-title row">
+                                          <!-- <div class="col-sm-6">
+                                             <div class="product-price-pack-quality">
+                                                6 Units/pack
+                                             </div>
+                                             </div> -->
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar">
+                                                MRP
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dallar-symbol">
+                                                <p>&#8377;</p>
+                                             </div>
+                                          </div>
+                                          <div class="col-md-2">
+                                             <div class="product-price-dig">
+                                                150.00
+                                             </div>
+                                          </div>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                       <div class="producttaxes">inclusive all taxes</div>
+                                       <div class="product-add product-detail-info">
+                                          <button class="add-product">
+                                          Add to Cart
+                                          </button>
+                                       </div>
+                                       <!-- <div class="product-price-dig"> 12.99</div> -->
+                                    </div>
+                                    <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                                 </div>
+                                 <!-- <div class="product-quantity">
+                                    <input type="number" value="2" min="1">
+                                    </div>-->
+                                 <!-- <div class="product-line-price">25.98</div> --> 
+                              </div>
+                           </div>
+                        </div>
+                        <div class="hide product">
+                           <div class="product-image">
+                              <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                              <img src="medicines/medicines/Neuro/Levcyn/1.gif">
+                           </div>
+                           <div class="product-details-special">
+                              <div class="product-title">
+                                 <div class="hide productSuffcx row">
+                                    <div class="col-md-2">
+                                       <div class="sufficx" >Rx</div>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="sufficxText">Prescription Requested</div>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                 <div class="productmanfacturedesc">LEVICYN TAB</div>
+                                 <div class="composition topmargin">Composition</div>
+                                 <div class="productmanfacture">Levetiracetam 500 MG</div>
+                                 <div class="composition topmargin">Therapeutic Class</div>
+                                 <div class="productmanfacture">Anticonvulsants</div>
+                              </div>
+                              <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                           </div>
+                           <!-- <div class="product-price-dig"> 12.99</div> -->
+                           <div class="product-price-details">
+                              <div class="product-title-price-quality">
+                                 <div class="product-price-pack-quality">
+                                    10 Units/pack 
+                                 </div>
+                                 <div class="product-price-title row">
+                                    <!-- <div class="col-sm-6">
+                                       <div class="product-price-pack-quality">
+                                          6 Units/pack
+                                       </div>
+                                       </div> -->
+                                    <div class="col-md-2">
+                                       <div class="product-price-dallar">
+                                          MRP
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="product-price-dallar-symbol">
+                                          <p>&#8377;</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="product-price-dig">
+                                          150.00
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="producttaxes">inclusive all taxes</div>
+                                 <div class="product-add product-detail-info">
+                                    <button class="add-product">
+                                    Add to Cart
+                                    </button>
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                              </div>
+                              <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                           </div>
+                           <!-- <div class="product-quantity">
+                              <input type="number" value="2" min="1">
+                              </div>-->
+                           <!-- <div class="product-line-price">25.98</div> --> 
+                        </div>
+                        <div class="hide product">
+                           <div class="product-image">
+                              <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
+                              <img src="medicines/medicines/Neuro/nervcyn/1.gif">
+                           </div>
+                           <div class="product-details-special">
+                              <div class="product-title">
+                                 <div class="hide productSuffcx row">
+                                    <div class="col-md-2">
+                                       <div class="sufficx" >Rx</div>
+                                    </div>
+                                    <div class="col-md-10">
+                                       <div class="sufficxText">Prescription Requested</div>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="productmanfacture">Mfg.Mhs Pharmaceuticals</div> -->
+                                 <div class="productmanfacturedesc">NERVCYN TAB</div>
+                                 <div class="composition topmargin">Composition</div>
+                                 <div class="productmanfacture">Gabapentin 300 MG + Mecobalamin 500mcg</div>
+                                 <div class="composition topmargin">Therapeutic Class</div>
+                                 <div class="productmanfacture">Drugs For Neuropathic Pain, Anticonvulsants</div>
+                              </div>
+                              <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                           </div>
+                           <!-- <div class="product-price-dig"> 12.99</div> -->
+                           <div class="product-price-details">
+                              <div class="product-title-price-quality">
+                                 <div class="product-price-pack-quality">
+                                    10 Units/pack 
+                                 </div>
+                                 <div class="product-price-title row">
+                                    <!-- <div class="col-sm-6">
+                                       <div class="product-price-pack-quality">
+                                          6 Units/pack
+                                       </div>
+                                       </div> -->
+                                    <div class="col-md-2">
+                                       <div class="product-price-dallar">
+                                          MRP
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="product-price-dallar-symbol">
+                                          <p>&#8377;</p>
+                                       </div>
+                                    </div>
+                                    <div class="col-md-2">
+                                       <div class="product-price-dig">
+                                          130.00
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                                 <div class="producttaxes">inclusive all taxes</div>
+                                 <div class="product-add product-detail-info">
+                                    <button class="add-product">
+                                    Add to Cart
+                                    </button>
+                                 </div>
+                                 <!-- <div class="product-price-dig"> 12.99</div> -->
+                              </div>
+                              <!-- <p class="product-description">Telmisartan 80mg and Clinidipine 10mg</p> -->
+                           </div>
+                           <!-- <div class="product-quantity">
+                              <input type="number" value="2" min="1">
+                              </div>-->
+                           <!-- <div class="product-line-price">25.98</div> --> 
+                        </div>
+                        <div class="hide totals">
+                           <div class="totals-item">
+                              <label>Subtotal</label>
+                              <div class="totals-value" id="cart-subtotal">71.97</div>
+                           </div>
+                           <div class="totals-item">
+                              <label>Tax (5%)</label>
+                              <div class="totals-value" id="cart-tax">3.60</div>
+                           </div>
+                           <div class="totals-item">
+                              <label>Shipping</label>
+                              <div class="totals-value" id="cart-shipping">15.00</div>
+                           </div>
+                           <div class="totals-item totals-item-total">
+                              <label>Grand Total</label>
+                              <div class="totals-value" id="cart-total">90.57</div>
+                           </div>
+                        </div>
+                        <button class="hide checkout">Checkout</button>
                      </div>
-                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" />  -->
-                        <!-- <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-4.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
                   </div>
                </div>
-            </div>
-            <div class="banner-bottom"></div>
-         </div>
-         <div id="body">
-            <div class="hide welcome-block">
-               <h1>Distributors</h1>
-               <div class="list-style-1">
-                  <p><img src="i/supracyn-2.jpg" alt="supracyn" width="270" height="207" align="right" style="margin-left:15px;" /></p>
-                  <h2>List of Institutions With Exclusive Rate Contract </h2>
-                  <ul>
-                     <li>Bharat Dynamic Limited  (Kanchanbagh)</li>
-                     <li>Bharat Dynamic Limited (Bhanur)</li>
-                     <li>National Academy  Agriculture Research Centre (Naarm)</li>
-                     <li>National Institute Of Rural  Development (Nird)</li>
-                     <li>Ordnance Factory Hospital, Medak,  Yeddumailaram</li>
-                     <li>Reserve Bank Of India, Hyderabad.</li>
-                  </ul>
-                  <h2>Other Institutions Catered</h2>
-                  <ul>
-                     <li>Air India Limited</li>
-                     <li>Bhel R&amp;D</li>
-                     <li>Bharat Heavy Electrical's Ltd  (Bhel)</li>
-                     <li>Employees State Insurance  Corporation (Esic)</li>
-                     <li>Freedom Foundation</li>
-                     <li>Gandhi Hospital  Aarogyasri</li>
-                     <li>Institute Of Mental Health Care  (Imh)</li>
-                     <li>Military Hospital</li>
-                     <li>Osmania General Hospital</li>
-                     <li>Osmania Aarogyasri</li>
-                     <li>Share India Trust</li>
-                     <li>Singareni Collieries Company Ltd  (Hyderabad &amp; Kothagudem)</li>
-                     <li>State Bank Of India (Sbi) Koti &amp; Secunderabad</li>
-                  </ul>
-                  <h2>We are  Distributors for various companies as stated below</h2>
-                  <ul>
-                     <li>Abbott Healthcare, (Formerly  Piramal Healthcare) </li>
-                     <li>Alkem Laboratories Ltd (Hiv)</li>
-                     <li>Bayer Zydus Ltd.</li>
-                     <li>Biocon Ltd</li>
-                     <li>Cipla Ltd</li>
-                     <li>Corazon Pharma Pvt. Ltd</li>
-                     <li>Emcure Pharmaceutical Ltd (Hiv)</li>
-                     <li>Giocon Pharma Limited.</li>
-                     <li>Hab Pharmaceuticals Ltd</li>
-                     <li>Jenburkt Pharmaceuticals Limited</li>
-                     <li>Mankind Pharmaceuticals </li>
-                     <li>Novonordisk</li>
-                     <li>Oxygen Pharmachem Pvt. Ltd.</li>
-                     <li>Pfizer Ltd</li>
-                     <li>Samarth Lifescience</li>
-                     <li>Steadfast Medishield Pvt Ltd.</li>
-                     <li>Serdia Pharmaceuticals (I) Pvt  Ltd</li>
-                     <li>Troikaa Pharmaceuticals Ltd</li>
-                     <li>Ucb India Pvt Ltd.</li>
-                     <li>Unichem Laboratories Ltd</li>
-                     <li>Vestas Life Science</li>
-                  </ul>
-                  <h2>List of  Key Accounts</h2>
-                  <ol style="margin-left:50px;">
-                     <li><b> Chain  Stores</b> - Med Plus, Sai Aashirwad (Hetro Pharmacy) Keimed (Apollo).</li>
-                     <li><b> Corporate Hosp</b>. - Medwin, Bishak Pharma (Kamineni Hosp.) Care (Banjara,  Nampally and Musheerabad),
-                        Yashoda  (Somajiguda,Secunderabad,Cancer Institute),
-                        Unimed Hospital, BBR,  Aware Global Hospital,
-                        KIMS, Aditya etc.
-                     </li>
-                     <li><b> Government Hospitals</b> - Osmania General Hospital, Osmania  Aarogyasri,
-                        Gandhi Hospital, Gandhi  Aarogyasri, ESIC, Institute of Mental Healthcare (IMH).
-                     </li>
-                     <li><b> CGHS  Chemist</b> - There are around 7 parties to supply 13 Dispensaries.</li>
-                  </ol>
-                  <p> Apart  from the above, there are important attached counters, Doctors and attach  pharmacies are also catered.</p>
-               </div>
+               <div class="banner-bottom"></div>
             </div>
          </div>
-         <div id="footer">
+         <div id="footer" style="height: 30px;">
             <div class="left">Copyright &copy; 2014 Supracyn Pharma All Rights Reserved.</div>
             <!-- <div class="right"><a href="http://dotweavers.com/" target="_blank">Web Design by dotWeavers, Hyderabad</a></div> -->
          </div>
