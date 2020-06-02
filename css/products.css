@@ -136,11 +136,14 @@ body {
     padding-bottom: 7px;
   }
 
+  .spacetop{
+    margin-top: 3px;
+  }
   .sufficxText{
     font-weight:bold;
   }
   .productmanfacture{text-decoration: underline;font-size: 12px;}
-  .productmanfacture-products{text-decoration: underline;font-size: 14px;}
+  .productmanfacture-products{text-decoration: underline;font-size: 14px;font-weight: bold;font-family: 'Cooper Black',Helvetica,Arial,sans-serif;}
   .producttaxes{
     margin-left: 70px;
     font-size: 10px;
@@ -150,6 +153,7 @@ body {
     font-weight:bold;
   }
   .productmanfacturedesc-products{
+    font-family: 'Cooper Black',Georgia, Times, 'Times New Roman', serif;
     font-size: 16px;
     font-weight:bold;
   }
