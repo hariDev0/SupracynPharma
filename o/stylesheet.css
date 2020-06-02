@@ -54,7 +54,12 @@ a:hover{color:#f86300}
 #body .address-icon{float:left;background:url(../i/icon-address.png) no-repeat;height:22px;line-height:22px;padding-left:32px;border-bottom:1px dashed #cecccc;width:360px;margin-bottom:5px;margin-left:5px}
 #body .phone-icon{float:left;background:url(../i/icon-telephone.png) no-repeat;min-height:22px;line-height:22px;padding-left:32px;border-bottom:1px dashed #cecccc;width:360px;margin-bottom:5px;margin-left:5px}
 #body .fax-icon{float:left;background:url(../i/icon-fax.png) no-repeat;height:22px;line-height:22px;padding-left:32px;border-bottom:1px dashed #cecccc;width:360px;margin-bottom:5px;margin-left:5px}
-#body .cell-icon{float:left;background:url(../i/icon-mobile.png) no-repeat;height:22px;line-height:22px;padding-left:32px;width:360px;border-bottom:1px dashed #cecccc;margin-bottom:5px;margin-left:5px}
+#body .cell-icon{float:left;background:url(../i/icon-mobile.png) no-repeat;height:22px;line-height:22px;padding-left:32px;width:360px;
+    /* border-bottom:1px dashed #cecccc; */
+    margin-bottom:5px;
+    margin-top: 3px;
+    /* margin-left:5px; */
+}
 #body .email-icon{float:left;background:url(../i/icon-mail.png) no-repeat;min-height:22px;line-height:22px;padding-left:32px;width:360px;margin-bottom:5px;margin-left:5px}
 #form{float:left;margin-top:20px}
 #form fieldset{border:1px dashed #cecccc;width:660px;padding:5px 20px}
