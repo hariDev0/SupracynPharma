@@ -140,12 +140,17 @@ body {
     font-weight:bold;
   }
   .productmanfacture{text-decoration: underline;font-size: 12px;}
+  .productmanfacture-products{text-decoration: underline;font-size: 14px;}
   .producttaxes{
     margin-left: 70px;
     font-size: 10px;
     width: 80px;}
   .productmanfacturedesc{
     font-size: 15px;
+    font-weight:bold;
+  }
+  .productmanfacturedesc-products{
+    font-size: 16px;
     font-weight:bold;
   }
   .topmargin{
