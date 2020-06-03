@@ -154,8 +154,13 @@ body {
   }
   .productmanfacturedesc-products{
     font-family: 'Cooper Black',Georgia, Times, 'Times New Roman', serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight:bold;
+  }
+  .productmanfacturedesc-products-units{
+    /* font-family: 'Cooper Black',Georgia, Times, 'Times New Roman', serif; */
+    font-size: 15px;
+    /* font-weight:bold; */
   }
   .topmargin{
     margin-top: 5px;
