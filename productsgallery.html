@@ -14,10 +14,13 @@
       <script src="js/ProductsGallery.js"></script>
 
       
-      <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+      <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
       </script>
       <link href="css/css1.css" rel="stylesheet" type="text/css" />
       <script src = "js/js.js"></script>
+      <script>
+         magnify("myimage", 3);
+      </script>
 
 
    </head>
@@ -80,36 +83,48 @@
   <!-- Gallery -->
   <div class="container">
   <div id="js-gallery" class="gallery">
+     <div class="row">
+         <div class="col-md-4">
+
+            <div class="gallery__thumbs">
+               <div><a ng-click="select(pic1)" data-gallery="thumb" >
+                  <!-- class="is-active" -->
+                   <img ng-src={{pic1}}>
+                 </a></div>
+               
+                 <div><a ng-click="select(pic2)">
+                 <img ng-src={{pic2}}>
+               </a></div>
+               <div><a ng-click="select(pic3)" data-gallery="thumb">
+                 <img ng-src={{pic3}}>
+               </a></div>
+               <div><a ng-click="select(pic4)" data-gallery="thumb">
+                <img ng-src={{pic4}}>
+              </a></div>
+
+              <div><a ng-click="select(pic5)" data-gallery="thumb">
+                <img ng-src={{pic5}}>
+              </a></div>
+              
+              
+           </div>
+         </div>
+         <div class="col-md-8">
+            <div class="gallery__hero">
+               <!-- <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom">Zoom</a> -->
+               <div class="img-magnifier-container">
+               <img id="myimage" ng-src={{pic}}>
+               </div>
+             </div>
+         </div>
+     </div>
 
     <!--Gallery Hero-->
-    <div class="gallery__hero">
-      <!-- <a href="" class="gallery__hero-enlarge ir" data-gallery="zoom">Zoom</a> -->
 
-      <img ng-src={{pic}}>
-    </div>
     <!--Gallery Hero-->
 
     <!--Gallery Thumbs-->
-    <div class="gallery__thumbs">
-        <a ng-click="select(pic1)" data-gallery="thumb" >
-         <!-- class="is-active" -->
-          <img ng-src={{pic1}}>
-        </a>
-        <a ng-click="select(pic2)">
-          <img ng-src={{pic2}}>
-        </a>
-        <a ng-click="select(pic3)" data-gallery="thumb">
-          <img ng-src={{pic3}}>
-        </a>
-        <a ng-click="select(pic4)" data-gallery="thumb">
-         <img ng-src={{pic4}}>
-       </a>
-       <a ng-click="select(pic5)" data-gallery="thumb">
-         <img ng-src={{pic5}}>
-       </a>
-       
-       
-    </div>
+
     <!--Gallery Thumbs-->
 
   </div><!--.gallery-->

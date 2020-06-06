@@ -15,8 +15,9 @@
       <!-- <link rel="css/Products" type="text/css" href="styles.less" /> -->
       <script src="js/Products.js"></script>
    </head>
-   <body >
-      <div id="container" >
+   <body ng-app="mainApp">
+      <div id="container" ng-controller = "productsController">
+         <!-- <h2>Welcome {{helloTo.title}} to the world of Tutorialspoint!</h2> -->
          <div id="top-header">
             <div class="logo"><a href="index.html"></a></div>
             <div class="hide products-block " >
@@ -69,13 +70,12 @@
                            <!-- <label class="product-line-price">Total</label> --> 
                         <!-- </div> -->
                         <div class="row">
-                           <div class="col-md-6">
+                           <!-- <a href="#" ng-click="test(1)"> -->
+                           <div class="col-md-6"   >
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <!-- <a href="medicines/medicines/Diabetics/Glimcyn-M/0.png" > -->
-                                       <img src="medicines/medicines/Diabetics/Glimcyn-M/2.gif">
-                                    <!-- </a> -->
+                                    <a href="#" ng-click="test('Glimcyn-M')"><img src="medicines/medicines/Diabetics/Glimcyn-M/2.gif" /></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -143,11 +143,12 @@
                                  <!-- <div class="product-line-price">25.98</div> --> 
                               </div>
                            </div>
+                           <!-- </a> -->
                            <div class="col-md-6">
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Diabetics/glimcynmet 2mg/2.gif">
+                                    <a href="#" ng-click="test('Glimcynmet 2')"><img src="medicines/medicines/Diabetics/glimcynmet 2mg/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -221,7 +222,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Diabetics/Voglicyn 0.2/2.gif">
+                                    <a href="#" ng-click="test('Voglicyn 0.2')"><img src="medicines/medicines/Diabetics/Voglicyn 0.2/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -292,7 +293,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Diabetics/voglicyn 0.3/2.gif">
+                                    <a href="#" ng-click="test('Voglicyn 0.3')"><img src="medicines/medicines/Diabetics/voglicyn 0.3/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -365,7 +366,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/cardiology/Metacyn 25/3.gif">
+                                    <a href="#" ng-click="test('Metcyn XL 25')"><img src="medicines/medicines/cardiology/Metacyn 25/3.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -436,7 +437,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/cardiology/Metacyn 50/3.gif">
+                                    <a href="#" ng-click="test('Metcyn XL 50')"><img src="medicines/medicines/cardiology/Metacyn 50/3.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -509,7 +510,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/cardiology/Supratel 20/2.gif">
+                                    <a href="#" ng-click="test('Supratel 20')"><img src="medicines/medicines/cardiology/Supratel 20/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -580,7 +581,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/cardiology/Supratel 40/2.gif">
+                                    <a href="#" ng-click="test('Supratel 40')"><img src="medicines/medicines/cardiology/Supratel 40/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -653,7 +654,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/cardiology/Supratel h/2.gif">
+                                    <a href="#" ng-click="test('Supratel H')"><img src="medicines/medicines/cardiology/Supratel h/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -725,7 +726,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/cardiology/Supratel AM/2.gif">
+                                    <a href="#" ng-click="test('Supratel AM')"><img src="medicines/medicines/cardiology/Supratel AM/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -800,7 +801,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Cholestrol/Atorcyn 10/2.gif">
+                                    <a href="#" ng-click="test('Atorcyn 10')"><img src="medicines/medicines/Cholestrol/Atorcyn 10/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -871,7 +872,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Cholestrol/Atrocyn - 20/2.gif">
+                                    <a href="#" ng-click="test('Atorcyn 20')"><img src="medicines/medicines/Cholestrol/Atrocyn - 20/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -944,7 +945,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Cholestrol/atorcyn 40/2.gif">
+                                    <a href="#" ng-click="test('Atorcyn 40')"><img src="medicines/medicines/Cholestrol/atorcyn 40/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1015,7 +1016,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Cholestrol/Rozucyn/2.gif">
+                                    <a href="#" ng-click="test('Rozucyn 10')"><img src="medicines/medicines/Cholestrol/Rozucyn/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1088,7 +1089,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Cholestrol/Rozucyn 20/2.gif">
+                                    <a href="#" ng-click="test('Rozucyn 20')"><img src="medicines/medicines/Cholestrol/Rozucyn 20/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1102,7 +1103,7 @@
                                        </div>
                                        <!-- <div class="productmanfacture-products">Mfg.Mhs Pharmaceuticals</div> -->
                                        <div class="productmanfacturedesc-products">Rozucyn 20</div>
-                                       <div class="productmanfacturedesc-products-units">3 Units/pack</div>
+                                       <div class="productmanfacturedesc-products-units">10 Units/pack</div>
                                        <div class="composition topmargin">Composition</div>
                                        <div class="productmanfacture-products">Rosuvastatin 20 MG</div>
                                        <div class="hide composition topmargin">Therapeutic Class</div>
@@ -1159,7 +1160,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Neuro/Levcyn/2.gif">
+                                    <a href="#" ng-click="test('Levicyn')"><img src="medicines/medicines/Neuro/Levcyn/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1232,7 +1233,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Neuro/nervcyn/2.gif">
+                                    <a href="#" ng-click="test('Nervecyn')"><img src="medicines/medicines/Neuro/nervcyn/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1246,7 +1247,7 @@
                                        </div>
                                        <!-- <div class="productmanfacture-products">Mfg.Mhs Pharmaceuticals</div> -->
                                        <div class="productmanfacturedesc-products" >Nervecyn</div>
-                                       <div class="productmanfacturedesc-products">1 Units/pack</div>
+                                       <div class="productmanfacturedesc-products">10 Units/pack</div>
                                        <div class="composition topmargin">Composition</div>
                                        <div class="productmanfacture-products">Gabapentin 300 MG +</div>
                                           <div class="productmanfacture-products">Mecobalamin 500mcg</div>
@@ -1305,7 +1306,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Supplements/cyncal d3/2.gif">
+                                    <a href="#" ng-click="test('Cyncal D3')"><img src="medicines/medicines/Supplements/cyncal d3/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1379,7 +1380,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Pain/Acepra/2.gif">
+                                    <a href="#" ng-click="test('Acepra')"><img src="medicines/medicines/Pain/Acepra/2.gif"></a>
                                  </div>
                                  <div class="product-details-special ">
                                     <div class="product-title-special">
@@ -1453,7 +1454,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Pain/tramcyn-p/2.gif">
+                                    <a href="#" ng-click="test('Tramcyn P')"><img src="medicines/medicines/Pain/tramcyn-p/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1528,7 +1529,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Pain/paracyn 650/2.gif">
+                                    <a href="#" ng-click="test('Paracyn 650MG')"><img src="medicines/medicines/Pain/paracyn 650/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1600,7 +1601,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Allergies/monte levo/2.gif">
+                                    <a href="#" ng-click="test('Monte-Levo')"><img src="medicines/medicines/Allergies/monte levo/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1675,7 +1676,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Gastro/rabcyn dsr/2.gif">
+                                    <a href="#" ng-click="test('Rabcyn DSR')"><img src="medicines/medicines/Gastro/rabcyn dsr/2.gif"></a>
                                  </div>
                                  <div class="product-details-special" >
                                     <div class="product-title-special">
@@ -1688,7 +1689,7 @@
                                           </div>
                                        </div>
                                        <!-- <div class="productmanfacture-products">Mfg.Mhs Pharmaceuticals</div> -->
-                                       <div class="productmanfacturedesc-products" >Rabcyn DSR </div>
+                                       <div class="productmanfacturedesc-products" >Rabcyn DSR</div>
                                        <div class="productmanfacturedesc-products-units">10 Units/pack</div>
                                        <div class="composition topmargin" >Composition</div>
                                        <div class="productmanfacture-products">Rabeprazole 20MG +</div>
@@ -1750,7 +1751,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Gastro/supan dsr/2.gif">
+                                    <a href="#" ng-click="test('Supan DSR')"><img src="medicines/medicines/Gastro/supan dsr/2.gif"></a>
                                  </div>
                                  <div class="product-details-special " >
                                     <div class="product-title-special">
@@ -1763,7 +1764,7 @@
                                           </div>
                                        </div>
                                        <!-- <div class="productmanfacture-products">Mfg.Mhs Pharmaceuticals</div> -->
-                                       <div class="productmanfacturedesc-products" >Supan DSR </div>
+                                       <div class="productmanfacturedesc-products" >Supan DSR</div>
                                        <div class="productmanfacturedesc-products-units">10 Units/pack</div>
                                        <div class="composition topmargin" >Composition</div>
                                        <div class="productmanfacture-products">Pantoprazole40MG +</div>
@@ -1827,7 +1828,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Gastro/supan 40/2.gif">
+                                    <a href="#" ng-click="test('Supan 40')"><img src="medicines/medicines/Gastro/supan 40/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1899,7 +1900,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Gastro/supan injection/2.gif">
+                                    <a href="#" ng-click="test('Supan 40 INJ')"><img src="medicines/medicines/Gastro/supan injection/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -1974,7 +1975,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/cardiology/Azycin/2.gif">
+                                    <a href="#" ng-click="test('Azicyn')"><img src="medicines/medicines/cardiology/Azycin/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -2045,7 +2046,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Anti-biotics/Curolite/2.gif">
+                                    <a href="#" ng-click="test('Curolite 500 mg')"><img src="medicines/medicines/Anti-biotics/Curolite/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -2118,7 +2119,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Anti-biotics/Cefixm 200/2.gif">
+                                    <a href="#" ng-click="test('Cefixm 200')"><img src="medicines/medicines/Anti-biotics/Cefixm 200/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
@@ -2189,7 +2190,7 @@
                               <div class="product">
                                  <div class="product-image-special">
                                     <!-- <div id="slider" class="nivoSlider"> <img src="i/img-1.jpg" alt="Supracyn" /> <img src="i/img-2.jpg" alt="Supracyn" /> <img src="i/img-3.jpg" alt="Supracyn" /> <img src="i/img-6.jpg" alt="Supracyn" /> <img src="i/img-5.jpg" alt="Supracyn" /></div> -->
-                                    <img src="medicines/medicines/Nephro/x-flav/2.gif">
+                                    <a href="#" ng-click="test('X-Flav')"><img src="medicines/medicines/Nephro/x-flav/2.gif"></a>
                                  </div>
                                  <div class="product-details-special">
                                     <div class="product-title-special">
