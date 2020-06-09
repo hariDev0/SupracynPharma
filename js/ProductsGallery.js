@@ -140,7 +140,6 @@ var json = {
     "p3":"./medicines/medicines/Cholestrol/atorcyn 40/Slide3_2.JPG",
     "p4":"./medicines/medicines/Cholestrol/atorcyn 40/Slide4_2.JPG",
     "p5":"./medicines/medicines/Cholestrol/atorcyn 40/Slide5_2.JPG"
-
   },
   "Rozucyn 10":{
 		"Name": "Rozucyn 10",
@@ -342,6 +341,8 @@ $scope.pic4 = $scope.jsonType[$scope.product.productName].p4;
 
 if($scope.jsonType[$scope.product.productName].p5 !== undefined)
 $scope.pic5 = $scope.jsonType[$scope.product.productName].p5;
+
+
 
 
 

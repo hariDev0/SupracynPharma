@@ -3,13 +3,19 @@
    <!-- Mirrored from supracynpharma.com/contact-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 25 May 2020 15:31:24 GMT -->
    <head>
       <title>Contact Us - Supracyn Pharma Distributor</title>
+      <script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js">
+      </script>
+          <script src="https://smtpjs.com/v3/smtp.js">
+          </script>
+
       <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
       <link href="o/stylesheet.css" rel="stylesheet" type="text/css" />
       <link rel="icon" href="i/favicon.jpg" sizes="16x16" type="image/png">
       <script type="text/javascript" src="../ff.kis.scr.kaspersky-labs.com/9CA528B6-9A43-264F-A014-FA8D1BD5842D/main.js" charset="UTF-8"></script>
+      <script src="js/email.js"></script>
    </head>
-   <body>
-      <div id="container">
+   <body ng-app="mainApp">
+      <div id="container" ng-controller = "email">
          <div id="top-header">
             <div class="logo"><a href="index.html"></a></div>
 
@@ -118,23 +124,23 @@
                   </tr>
                </table>
                <div id="form">
-                  <form action="http://supracynpharma.com/contact-us.asp" method="post" name="fm1" id="fm1">
+                  <form  name="fm1" id="fm1">
                      <fieldset>
                         <legend>Information request form</legend>
                         <p>Fields marked with * are required.</p>
-                        <p><label for="name">Your Name *</label><br /><input type="text" id="name" name="name" style="width:375px;" /></p>
-                        <p><label for="phone2">Telephone Number *</label><br /><input type="text" id="phone2" name="phone" style="width:375px;" /></p>
-                        <p><label for="email">Email *</label><br /><input type="text" id="email" name="email" style="width:375px;" /></p>
-                        <p><label for="address">Address</label><br /><textarea id="address" name="address" cols="45" rows="3" style="width:375px;"></textarea></p>
-                        <p><label for="time">Preferred Contact Time *</label><br /><input type="text" id="time" name="time" style="width:375px;" /></p>
-                        <p><label for="message">Your Message *</label><br /><textarea name="message" id="message" cols="45" rows="3" style="width:375px;"></textarea></p>
-                        <p class="submit"><input type="submit" value="Submit" name="contactUsSubmitButton" id="contactUsSubmitButton" /></p>
+                        <p><label for="name">Your Name *</label><br /><input type="text" id="name" ng-model="name" name="name" style="width:375px;" /></p>
+                        <p><label for="phone2">Phone Number *</label><br /><input type="text" id="phone2" ng-model="phone" name="phone" style="width:375px;" /></p>
+                        <p><label for="email">Email *</label><br /><input type="text" id="email" name="email" ng-model="email" style="width:375px;" /></p>
+                        <p><label for="address">Address</label><br /><textarea id="address" ng-model="address" name="address" cols="45" rows="3" style="width:375px;"></textarea></p>
+                        <!-- <p><label for="time">Preferred Contact Time *</label><br /><input type="text" id="time" name="time" style="width:375px;" /></p> -->
+                        <p><label for="message">Your Message *</label><br /><textarea name="message" id="message" ng-model="message" cols="45" rows="3" style="width:375px;"></textarea></p>
+                        <p class="submit"><input type="submit" ng-click="submit()"  name="contactUsSubmitButton" id="contactUsSubmitButton" /></p>
                      </fieldset>
                   </form>
                </div>
-               <script language=JavaScript src="o/validate.js" type="text/javascript"></script><script language="JavaScript" type="text/javascript">
+               <!-- <script language=JavaScript src="o/validate.js" type="text/javascript"></script><script language="JavaScript" type="text/javascript">
                   var fm1v = new Validator("fm1");fm1v.addValidation("name","req","Please specify Name.");fm1v.addValidation("email","req","Please specify Email.");fm1v.addValidation("Email","email","Please specify a valid Email.");fm1v.addValidation("telephone","req","Please specify Telephone.");fm1v.addValidation("message","req","Please specify Message.");
-               </script>
+               </script> -->
             </div>
          </div>
          <div id="footer">
